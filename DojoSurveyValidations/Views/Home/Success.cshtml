@@ -1,0 +1,15 @@
+
+<h2>@Context.Session.GetString("name")</h2>
+<h4>@Context.Session.GetString("location")</h4>
+<h4>@Context.Session.GetString("favoritelanguage")</h4>
+
+@if (Context.Session.GetString("comment") != null) {
+    <div>
+        <p>Comment: @Context.Session.GetString("comment")</p>
+    </div>
+}
+else {
+    <div>
+        <p>No Comment</p>
+    </div>
+}
